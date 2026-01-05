@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sky Way- Flight Booking</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+ <style>
+      body{
+        background-image: url(gemini.png);
+        background-size: cover;
+        backdrop-filter: blur(6px);
+        scroll-behavior: smooth;
+        
+      }
+
+      
+
+      #menu{
+        font-size:20px;
+        color: white;
+      }
+
+       .subscribe-box {
+        background:rgb(43, 149, 181);
+        border-radius: 12px;
+        padding: 40px;
+        max-width: 450px;
+        opacity: 0.8;
+    }
+    .subscribe-btn {
+        background-color:blue;
+        border: none;
+    }
+    .subscribe-btn:hover {
+        background-color:blue;
+    }
+    
+
+   
+    </style>
+
+</head>
+<body>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <div class="container">
+  <a class="navbar-brand" href="#" style="font-weight: bolder; letter-spacing: 2px; font-size: 80px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: -100px;">Sky Way</a>
+
+
+   <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+   <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="book.html">Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="destination.html">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+       <a class="nav-link" href="#about">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<section class="section-1 text-center p-5">
+    <h1 style="letter-spacing: 1px; font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">Available Flights</h1>
+    <p style="letter-spacing: 2px; ">Choose the best flight for your journey</p>
+</section>
+
+
+
+<section class="section-2 py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 text-white fw-bold">Today's Flights</h2>
+
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div class="card shadow text-center p-3">
+                    <h5>IndiGo</h5>
+                    <p>Delhi ➝ Dubai</p>
+                    <p>₹12,500</p>
+                    <a href="seat.html" class="btn btn-primary">Select</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow text-center p-3">
+                    <h5>Air India</h5>
+                    <p>Mumbai ➝ London</p>
+                    <p>₹29,800</p>
+                    <a href="seat.html" class="btn btn-primary">Select</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow text-center p-3">
+                    <h5>Emirates</h5>
+                    <p>Chennai ➝ Paris</p>
+                    <p>₹34,500</p>
+                    <a href="seat.html" class="btn btn-primary">Select</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="section-3 p-2">
+    <div class="container">
+        <h3 class="text-center text-white fw-bold">Filter Flights</h3>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>Price</option>
+                    <option>Low to High</option>
+                    <option>High to Low</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>Airline</option>
+                    <option>IndiGo</option>
+                    <option>Air India</option>
+                    <option>Emirates</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <button class="btn btn-primary w-100">Apply</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section-4 p-5">
+    <div class="container">
+        <h2 class="text-center mb-4 text-white">Why Choose Sky Way?</h2>
+        <div class="row text-center">
+            <div class="col-md-4 text-white">
+                <h5>Low Prices</h5>
+                <p>Best fares available</p>
+            </div>
+            <div class="col-md-4 text-white">
+                <h5>24/7 Support</h5>
+                <p>Always here to help</p>
+            </div>
+            <div class="col-md-4 text-white">
+                <h5>Safe Travel</h5>
+                <p>Secure & fast booking</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-6 text-center p-2">
+    <div class="container">
+        <h2 class="text-white">Ready to Fly?</h2>
+        <p class="text-white">Book your tickets now and enjoy your trip</p>
+        <a href="payment.html" class="btn btn-lg btn-primary">Proceed to Payment</a>
+    </div>
+</section>
+
+
+
+<!-- about -->
+
+<section id="about" style="position: relative;">
+<div style="position: relative;">
+  <img src="cont.jpg" width="100%" height="400px" style="opacity: 0.3;">
+  <p class=" text-white mt-5" style="position: absolute; top: 1%; font-size: 50px; margin-left: 45%; font-weight: bold;">About  Us</p>
+  <p style="position: absolute; top: 40%; font-size:20px;font-family: cursive;"> SkyWay is a smart and user-friendly flight booking platform designed to make travel easier for everyone.
+
+We provide quick search, instant booking, and real-time flight information for a smooth travel experience.
+
+Our goal is to offer affordable flight options with clear details and a simple booking process.
+
+We focus on secure payments, ensuring every transaction is safe and reliable.
+
+SkyWay is built to give fast performance, modern UI, and seamless navigation across all devices.
+
+We offer 24/7 support to help users with booking, cancellations, and travel queries.
+
+
+Our vision is to build a platform that delivers affordability, accuracy, and exceptional service with every booking.
+</p>
+</div>
+</section>
+
+
+    
+   
+  <footer class="section-8 text-center p-5 bg-dark text-white ">
+  <p>© 2025 SkyWay Airlines - All Rights Reserved. By using this website, you acknowledge and accept the Conditions of Carriage applicable, Terms and Conditions, and Privacy Notice.</p>
+</footer>
+
+</div>
+</body>
+</html>
