@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <style>
+      body{
+         margin: 0;
+
+      }
+      .container-fluid{
+         background-size: cover;
+      }
+        .main{
+            position: relative;
+            width:100%;
+            margin:0px;
+            overflow: hidden;
+        }
+        .main video{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .main h1,h2,p,h3{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            font-weight: bolder;
+         }
+
+         h1{
+            top: 610px;
+            font-size: 80px;
+         }
+
+         h2{
+            top: 740px;
+            text-align: center;
+            font-size: 45px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         }
+
+         p{
+            top: 850px;
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         }
+        
+        
+         .image{
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translatex(-50%);
+            display: flex;
+            gap:20px;
+         }
+         h3{
+            animation: bounce 2s ;
+            color: white;
+            top:1090px;
+         }
+          @keyframes bounce{
+                100%{
+                    bottom:200px;
+                    transform:scale(1);}
+                  }
+        .second{
+         position: relative;
+         display: flex;
+      }
+
+      .second .line1{
+         position: absolute;
+         width:700px;
+         height:1000px;
+         left:890px;
+         transform: translatex(200px);
+         z-index: 1;
+     
+       }
+
+      .second .momo{
+         position:absolute;
+         z-index: 2;
+         width: 250px;
+         height:250px;
+         transform: translatex(200px);
+         margin-top: 100px;
+         margin-left:1400px;
+        
+      }
+       
+      
+      .second .line2{
+         width:700px;
+         height:1000px;
+         left:10px;
+         transform: translatex(200px);
+       
+         z-index: 1;
+       }
+
+       .second .tom{
+         width: 50px;
+         height: 50px;
+         margin-top: 600px;
+         margin-left: 150px;
+       }
+
+      .second .bur{
+         position:absolute;
+         width: 250px;
+         height: 250px;
+         margin-left:220px;
+        margin-top:450px;
+      }
+ 
+       .second .leaf{
+         position:absolute;
+         width: 50px;
+         height: 50px;
+         margin-top: 100px;
+         margin-left: 520px;         
+       }
+
+       .second .tom1{
+         position: absolute;
+         width: 50px;
+         height: 50px;
+         margin-left:1500px;
+         margin-top:500px;
+       }
+
+        .second .cut{
+         position:absolute;
+         width: 250px;
+         height: 250px;
+         margin-left:1100px;
+        margin-top:600px;
+      }
+
+      .second h1{
+         position: absolute;
+         color: tomato;
+         text-align: center;
+         margin-left: 800px;
+         top:-100px;
+         margin-top: 400px;
+         font-size: 60px;
+      }
+
+      .second p{
+         position: absolute;
+         color: black;
+         font-size:25px;
+         opacity:0.5;
+         top: -100px;
+         margin-top:630px;
+         line-height: 1.4;
+         left: -10px;
+         margin-left: 1000px;
+         font-family:sans-serif;
+      }
+   .cut,.momo, .bur{
+    position: relative;
+    animation-name:cornerIn;
+    animation-duration:10.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes cornerIn{
+   0%{
+      transform: translatey(0);
+      opacity: 0.5;
+   }
+  100% {
+    transform:translatey(550px)
+     ;
+     opacity: 1;
+  }
+      }
+
+      .stats-box {
+    width:1100px;
+    height: 100px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin-top: 100px;
+}
+
+.stat {
+   position: relative;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.icon{
+   width: 45px;
+}
+.stat icon {
+   position: absolute;
+    width: 30px;
+    height: 20px;
+    margin-bottom: 10px;
+  
+}
+
+.right h4 {
+    font-size:40px;
+    font-weight:80px;
+    color:black;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.right h6 {
+    font-size:20px;
+    color:gray;
+    margin: 0;
+    pad: 20px;
+}
+
+.phone{
+   background: linear-gradient(to bottom,mistyrose,white);
+   position: relative;
+   height: 1000px;
+   width: 100%;
+   padding: 0px;
+   top: -300px;
+   background-size: cover;
+   
+  
+}
+
+.phone h2{
+   position: relative;
+     color:red;
+     text-align: center; */
+      top: -200px;
+     margin-top: 400px;
+     font-size: 70px;
+     top: 240px;
+     opacity:0.7;
+}
+
+.phone p{
+   text-align: center;
+   font-size:25px;
+   color:black;
+   opacity:0.6;
+   top: -80px;
+   margin-top:500px;
+   width: 500px;
+   line-height: 1.6;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.phone2 {
+    position: relative;
+    width: 310px;
+    height: 234px;
+    margin-left: 850px;
+    top: -800px;
+
+}
+
+.phone-img {
+    width: 350px;
+    height:350px;
+   
+}
+
+.calender {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box {
+    width: 180px;
+    height: 200px;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px grey;
+    margin-top:80px;
+    margin-left: 40px;
+}
+
+.box img {
+    width:190px;
+    height: 100px;
+    margin-top: -50px;
+}
+
+.box p{
+   text-align: center;
+   color: black;
+   font-size:18px;
+   top:0px;
+   margin-top:250px;
+   margin-left:20px;
+}
+
+.veg{
+   width: 120px;
+   height: 130px;
+   background: white;
+   border-radius: 18px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   box-shadow: 0px 4px 20px grey;
+
+
+   
+}
+
+.veg{
+        position:relative;
+        border:0px solid grey;
+        width:150px;
+        height:130px;
+        border-radius: 15px;
+        padding: 10px;
+        margin-top: 200px;
+        margin-left: -250px;
+        top: -500px;
+}
+
+.veg p{
+   position: absolute;
+   color: black;
+   text-align: center;
+   font-size:18px;
+   top:-0px;
+   margin-top:120px;
+   opacity: 0.5;
+ }
+
+
+ .healthy{
+        position: relative;
+        border:0px solid grey;
+        box-shadow: 1px 5px 10px grey;
+        width:150px;
+        height:130px;
+        border-radius: 15px;
+        padding: 10px;
+        margin-top: 100px;
+        margin-left:-460px;
+        top: -700px;
+        background: white;
+
+ }
+
+ .healthy p{
+   position: absolute;
+   color: black;
+   text-align: center;
+   font-size:18px;
+   top:-0px;
+   margin-top:120px;
+   opacity: 0.5;
+ }
+
+ 
+ .plan{
+   
+    position: relative;
+    box-shadow: 1px 5px 10px grey;
+    width: 150px;
+    height: 130px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top:100px;    
+    margin-left:450px;    
+    background: white;
+    margin-top:-740px;
+}
+
+ .plan p{
+   position:absolute;
+   color: black;
+   text-align: center;
+   font-size: 18px;
+   opacity: 0.5;
+   margin-top: -750px;
+ 
+ }
+
+ .plan img{
+   margin-left:30px;
+ }
+
+ .plate{
+   
+    position: relative;
+    box-shadow: 1px 5px 10px grey;
+    width: 150px;
+    height: 130px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top:-400px;    
+    margin-left:1280px;    
+    background: white;
+   
+}
+
+.plate img{
+   margin-left: 30px;
+}
+
+ .plate p{
+   position:absolute;
+   color: black;
+   text-align: center;
+   font-size: 18px;
+   opacity: 0.5;
+   margin-top: -750px;
+ 
+ }
+
+  .food{
+   
+    position: relative;
+    box-shadow: 1px 5px 10px grey;
+    width: 150px;
+    height: 130px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top:-70px;    
+    margin-left:1480px;    
+    background: white;
+   
+}
+
+.food img{
+   margin-left: 30px;
+}
+
+.food p{
+   position:absolute;
+   color: black;
+   text-align: center;
+   font-size: 18px;
+   opacity: 0.5;
+   margin-top: -740px;
+ 
+ }
+
+
+ .offer{
+   
+    position: relative;
+    box-shadow: 1px 5px 10px grey;
+    width: 150px;
+    height: 130px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top:30px;    
+    margin-left:1400px;    
+    background: white;
+   
+}
+
+.offer img{
+   margin-left: 30px;
+}
+
+.offer p{
+   position:absolute;
+   color: black;
+   text-align: center;
+   font-size: 18px;
+   opacity: 0.5;
+   margin-top:-740px;
+ 
+ }
+
+ .laast{
+   background-color: black;
+   height:500px;
+   display: flex;
+   justify-content:start;
+   gap: 60px;
+   align-items: flex-start;
+   padding: 40px 0px;
+   color: white;
+   /* width: 100%; */
+ 
+ }
+
+ .laast h1{
+   margin-left: 100px;
+   margin-top: 200px;
+ }
+
+ .end, .learn{
+   width: 75%;
+ }
+
+ .end h4{
+   color: white;
+   font-size:20px;
+   margin:20px;
+   margin-top: 180px;
+   margin-left: 420px;
+   
+ }
+
+ .end ul{
+   color:lightblue;
+   margin-left: -20px;
+   opacity:0.6;
+   line-height:2;
+   margin-left: 400px;
+ }
+
+
+.learn h4{
+   color: white;
+   margin-top:180px;
+   margin-left:-80px;
+   font-size: 20px;
+}
+
+.learn ul{
+   color:lightblue;
+   margin-top: -10px;
+   opacity:0.6;
+   line-height:2;
+   margin-left:-100px;
+
+}
+
+footer{
+   margin-top:-50px;
+   background-color: black;
+   color: white;
+   text-align: center;
+   border-top: 2px solid white;
+   padding:20px;
+}
+
+ul :hover{
+   color:white;
+   cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+
+   <div class="container-fluid">
+    <div class="main">
+
+   <video autoplay muted loop>
+    <source src="fdv.mp4">
+   </video>
+    <h1>zomato</h1>
+   <h2>India’s #1<br>
+food delivery app</h2>
+<p>Experience fast & easy online ordering<br>
+on the Zomato app</p>
+<div class="image">
+<img src="gp.avif" width="250px" height="70px">
+<img src="app.avif" width="250px" height="70px">
+
+</div>
+
+<h3>Scroll down ⇊</h3>
+</div>
+
+</div>
+<div class="second">
+   <img src="line2.avif" class="line1">
+   <img src="side1.avif" class="momo">
+   <img src="line2.avif" class="line2">
+   <img src="tomato.avif" class="tom">
+   <img src="leaf.avif" class="leaf">
+    <img src="bur.avif" class="bur">
+   <img src="tomato.avif" class="tom1">
+   <img src="cut.avif" class="cut">
+
+   <h1>Better food for<br>more people</h1>
+   <p>For over a decade, we’ve enabled our<br>customers to discover new tastes,<br> delivered right to their doorstep
+</p>
+</div>
+
+
+<div class="stats-box">
+    <div class="stat">
+        <img src="home.webp" alt=""
+        class="icon">
+        <div class="right">
+        <h4>3,00,000+</h4>
+        <h6>restaurants</h6>
+    </div>
+    </div>
+    <div class="stat">
+        <img src="location.avif" alt="" 
+        class="icon">
+        <div class="right">
+        <h4>800+</h4>
+        <h6>cities</h6>
+    </div>
+    </div>
+
+    <div class="stat">
+        <img src="order.avif" alt=""
+        class="icon">
+        <div class="right">
+        <h4>3 billion+</h4>
+        <h6>orders delivered</h6>
+         </div>
+    </div>
+</div>
+
+<div class="phone">
+   <h2>What’s waiting for you<br>on the app?</h2>
+   <p>Our app is packed with features that<br> enable you to experience food <br>delivery like never before</p>
+
+</div>
+
+<div class="phone2">
+   <img src="phone.avif" class="phone-img">
+   <div class="calender">
+      <div class="box">
+         <img src="calender.avif">
+         <p>Schedule your order</p>
+      </div>
+   </div>
+
+
+<div class="veg">
+   <img src="veg.avif" width="100px"/>
+   <p>Veg Mode</p>
+</div>
+
+<div class="healthy">
+   <img src="health.avif" width="100px" style="margin-left: 20px; margin-top: 20px;"/>
+   <p>Healthy</p>
+</div>
+</div>
+
+<div class="plan">
+   <img src="plan.avif" width="100px"/>
+   <p>Plan a Party</p>
+</div>
+
+<div class="plate">
+   <img src="plate.avif" width="100px"/>
+   <p>Gourmet</p>
+</div>
+
+<div class="food">
+   <img src="train.avif" width="100px">
+   <p>Food on<br>Train</p>
+</div>
+
+<div class="offer">
+   <img src="offer.avif" width="100px">
+   <p>Offer</p>
+</div>
+
+</div>
+
+   <div class="laast">
+      <h1>zomato</h1>
+   <div class="end">
+      <h4>External</h4>
+      <ul type="none">
+         <li>Zomato</li>
+         <li>Blinket</li>
+         <li>District</li>
+         <li>Hyperpure</li>
+         <li>Feeding India</li>
+         <li>Investor Relations</li>
+      </ul>
+         </div>
+   <div class="learn">
+      <h4>Learn More</h4>
+      <ul type="none">
+         <li>Privacy</li>
+         <li>Security</li>
+         <li>Terms of Service </li>
+         <li>Help & Support</li>
+         <li>Report a Froud</li>
+         <li>Blog</li>
+      </ul>
+   </div>
+</div>
+
+<footer>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners
+2008-2025 © Zomato™ Ltd. All rights reserved.</footer>
+</div>
+</div>
+</div>    
+</body>
+</html>
